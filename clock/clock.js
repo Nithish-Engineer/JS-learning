@@ -80,8 +80,8 @@ function rotatehand(element,rotateDegree) {
 
 }
 
-//setInterval(setTime,1000);
-//setTime();
+setInterval(setTime,1000);
+setTime();
 
 // 360%60 => 6
 // so we have to do 6*(Minutes/seconds) 
