@@ -1,0 +1,20 @@
+Bundlers 
+
+webpack
+parceler 
+snow-flake
+
+How does this  live server?
+
+HMR --  Hot module rendering 
+file watchers algo 
+
+what is transitive dependencies
+
+
+go through parcle doc and explore things
+
+
+Difference between HTMl and JSX
+
+How does babel will used in jsx templates

@@ -1,0 +1,193 @@
+.Digital {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2px 1fr 1fr;
+    width: 250px;
+}
+
+* {
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.Globe {
+    
+}
+.time-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    column-gap: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+.tab1 {
+    background-color: #8c8cda;
+    padding: 9px;
+    cursor: pointer;
+    border-right-width: 2px;
+    border-color: #4d3dffc9;
+    border-right-style: solid;
+    border-radius: 1rem 0.1rem 0.1rem 1rem;
+}
+
+.tab2 {
+    background-color: #8c8cda;
+    padding: 9px;
+    cursor: pointer;
+    border-left-width: 2px;
+    border-color: #4d3dffc9;
+    border-left-style: solid;
+    border-radius: 0.1rem 1rem 1rem 0.1rem; 
+}
+
+.block {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    place-self: center;
+    padding: 0px;
+    border: solid 0.4px #dedbdb;
+    border-radius: 0.2rem;
+    font-size: xxx-large;
+    box-shadow: -2px 2px 0px 1px red;
+    width: 80%;
+    margin: 1px;
+}
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.colon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    place-self: center;
+    font-size: xxx-large;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+@keyframes rotateCard {
+    0% {transform: rotateX(45deg);}
+    50%{transform: rotateX(90deg);}
+    75%{transform: rotateX(45deg);}
+    100%{transform: rotateX(0deg);}
+    
+}
+
+.Analog {
+    display: flex;
+    border: 3px solid black;
+    border-radius: 8rem;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    justify-content: center;
+}
+.clock {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    place-self: center;
+    position: absolute;
+}
+.hand {
+    border-radius: 2px 2px 2px 2px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    position: absolute;
+    transform-origin: bottom;
+
+}
+.Dot {
+    border: 7px solid black;
+    border-radius: 8px;
+    transform: translate(0%,-65%);
+}
+.Hours {
+    --rotate: 0;
+    border: 5px solid #c33d3d;
+    height: 50px;
+    transform: translate(0%,-100%) rotate(calc(var(--rotate)*1deg));
+}
+.Minutes {
+    --rotate: 0;
+    border: 3px solid #8c8cda;
+    height: 60px;
+    border-radius: 2px 2px 2px 2px;
+    transform: translate(0%,-102%) rotate(calc(var(--rotate)*1deg));
+}
+.Seconds {
+    border: 1px solid mediumorchid;
+    height: 75px;
+    border-radius: 2px 2px 2px 2px;
+    --rotate: 0;
+    transform: translate(0%,-100%) rotate(calc(var(--rotate)*1deg));
+}
+
+.number {
+  position: absolute;  
+  display: flex;
+  font-size: large;
+  bottom: 0;
+  left: 0;
+}
+.number12 {
+    transform: translate(-9px, -380%);
+}
+.number1 {
+    transform: translate(450%, -300%);
+}
+.number2 {
+   transform: translate(810%, -160%);
+}
+.number3 {
+    transform: translate(950%, 40%);
+}
+.number4 {
+    transform: translate(840%, 280%);
+}
+.number5 {
+    transform:translate(470%, 430%);
+}
+.number6 {
+    transform: translate(-40%, 470%);
+}
+.number7 {
+    transform: translate(-540%, 420%);   
+}
+.number8 {
+    transform: translate(-900%, 260%);
+}
+.number10 {
+  transform: translate(-470%, -160%);
+}
+.number9 {
+    transform: translate(-1050%, 40%);
+}
+.number11 {
+    transform: translate(-315%,-315%);
+}
+.tab-content {
+    display: none;
+    padding: 0px;
+    margin: 0px;
+}
+.tab1.active {
+  background-color: red;
+}
+.tab-content.active {
+    display: flex;
+}
